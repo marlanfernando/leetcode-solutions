@@ -1,3 +1,5 @@
+package _24_02_2024;
+
 public class IntegerPalindrome {
 
     // check if the integer is palindrome or not

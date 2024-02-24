@@ -1,3 +1,5 @@
+package _24_02_2024;
+
 class ListNode {
     int val;
     ListNode next;
@@ -70,17 +72,17 @@ public class AddTwoNumbers {
 
 /**
  * Definition for singly-linked list.
- * public class ListNode {
+ * public class _24_02_2024.ListNode {
  *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ *     _24_02_2024.ListNode next;
+ *     _24_02_2024.ListNode() {}
+ *     _24_02_2024.ListNode(int val) { this.val = val; }
+ *     _24_02_2024.ListNode(int val, _24_02_2024.ListNode next) { this.val = val; this.next = next; }
  * }
 
 class Solution {
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public _24_02_2024.ListNode addTwoNumbers(_24_02_2024.ListNode l1, _24_02_2024.ListNode l2) {
         List<Integer> array = new ArrayList<>();
 
         int cf = 0;
@@ -98,13 +100,13 @@ class Solution {
             array.add(cf);
         }
 
-        ListNode returnNode = null;
+        _24_02_2024.ListNode returnNode = null;
 
         for (int i = 0; i < array.size(); i++) {
             if (returnNode == null) {
-                returnNode = new ListNode(array.get(i));
+                returnNode = new _24_02_2024.ListNode(array.get(i));
             } else {
-                returnNode.next = new ListNode(array.get(i));
+                returnNode.next = new _24_02_2024.ListNode(array.get(i));
             }
         }
 
